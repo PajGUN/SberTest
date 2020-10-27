@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd"
+             version="7">
+
+    <module id="SberConsumer-Web">
+        <web>
+            <web-uri>SberConsumer.war</web-uri>
+            <context-root>SberConsumerWeb</context-root>
+        </web>
+    </module>
+    <module id="SberProducer-Web">
+        <web>
+            <web-uri>SberProducer.war</web-uri>
+            <context-root>SberProducerWeb</context-root>
+        </web>
+    </module>
+</application>

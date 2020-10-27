@@ -1,0 +1,31 @@
+swagger: '2.0'
+info:
+  description: Api Documentation
+  version: '1.0'
+  title: Consumer
+  termsOfService: 'urn:tos'
+host: 'localhost:8090'
+basePath: /
+tags:
+  - name: message-controller
+    description: Message Controller
+paths:
+  /api/1.0/message/getall:
+    get:
+      tags:
+        - message-controller
+      summary: getAllMessages
+      operationId: getAllMessagesUsingGET
+      produces:
+        - '*/*'
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: string
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
